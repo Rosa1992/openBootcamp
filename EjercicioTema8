@@ -1,0 +1,41 @@
+/*en java*/
+public class Main {
+
+public static void main(String[] args) {
+/*Creación - main*/
+        Persona persona = new Persona();
+/*gets y sets*/
+        persona.setNombre("Rosa");
+        System.out.println("Mi nombre es " + persona.getNombre());
+        persona.setEdad(29);
+        System.out.println("Tengo " + persona.getEdad() + " años");
+        persona.setTelefono(11111111);
+        System.out.println("Mi teléfono es " + persona.getTelefono());
+    }
+}
+/*Creación - clase Persona*/
+class Persona {
+/*Creación - variables*/
+    private String nombre;
+    private int edad;
+    private int telefono;
+/*Creación - gets y sets - propiedad*/
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setEdad(int edad){
+        this.edad = edad;
+    }
+    public int getEdad() {
+        return edad;
+    }
+    public void setTelefono(int telefono){
+        this.telefono = telefono;
+    }
+    public int getTelefono() {
+        return telefono;
+    }
+}
