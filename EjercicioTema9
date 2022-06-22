@@ -1,0 +1,37 @@
+/*Java*/
+public class Main {
+
+    public static void main(String[] args) {
+/*Clase Cliente*/        
+        Cliente cliente = new Cliente();
+        Trabajador trabajador = new Trabajador();
+        cliente.nombre = "Rosa";
+        cliente.edad = 29;
+        cliente.telefono = 111111;
+        cliente.credito = 1000;
+        System.out.println("Soy " + cliente.nombre + ", tengo " + cliente.edad + " años y mi telefono es " + cliente.telefono
+                + " y mi credito disponible es " + "$" + cliente.credito);
+
+        trabajador.nombre = "Sebas";
+        trabajador.edad = 29;
+        trabajador.telefono = 222222;
+        trabajador.salario = 2000;
+        System.out.println("Soy " + trabajador.nombre + ", tengo " + trabajador.edad + " años y mi telefono es " + trabajador.telefono
+                + " y mi salario es de " + "$" + trabajador.salario);
+
+    }
+}
+/*Clase persona con  variables*/
+class Persona{
+    int edad;
+    int telefono;
+    String nombre;
+}
+/*Clase Cliente  herencia*/
+class Cliente extends Persona{
+    double credito;
+}
+/*Clase Trabajador herencia y variable*/
+class Trabajador extends Persona {
+    double salario;
+}
